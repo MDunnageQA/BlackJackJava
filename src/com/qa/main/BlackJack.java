@@ -14,7 +14,7 @@ public class BlackJack
 		else
 		{
 		
-			while (blackJackNumberOne != 22)
+			do
 			{
 				blackJackNumberOne++;
 				numberOneCountNumber++;
@@ -24,7 +24,8 @@ public class BlackJack
 					blackJackNumberTwo++;
 					numberTwoCountNumber++;
 				}
-			}
+			} while (blackJackNumberOne != 22);
+				
 			if (numberOneCountNumber < numberTwoCountNumber)
 			{
 				System.out.println("Number one is closest to going over 21");
